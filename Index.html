@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shewita Shifone - Ethiopian Traditional Clothing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand">Shewita Shifone</div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+            <button class="toggle-btn" id="toggleBtn">☰</button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Shewita Shifone</h1>
+                <p>Discover the beauty and elegance of authentic Ethiopian traditional wear</p>
+                <a href="#gallery" class="cta-button">View Our Collection</a>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <h2>Our Collection</h2>
+            <div class="speed-controls">
+                <button onclick="adjustSpeed(0.5)">Slow</button>
+                <button onclick="adjustSpeed(1)">Normal</button>
+                <button onclick="adjustSpeed(2)">Fast</button>
+            </div>
+            <div class="gallery-container" id="galleryContainer"></div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-section">
+                    <h3>Our Story</h3>
+                    <p>As a dedicated mother of three children, I have devoted my life to preserving and sharing the rich cultural heritage of Ethiopian traditional clothing. What began as a passion has blossomed into a thriving business, allowing me to support my family while celebrating our beautiful traditions.</p>
+                </div>
+                <div class="about-section">
+                    <h3>Our Craft</h3>
+                    <p>Each piece of clothing we create is a testament to the centuries-old traditions of Ethiopian craftsmanship. We carefully select the finest materials and employ traditional techniques passed down through generations, ensuring that every garment tells a story of our cultural heritage.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <a href="tel:+251911602340" class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-info">
+                        <h3>Phone</h3>
+                        <p>+251911602340</p>
+                    </div>
+                </a>
+                <a href="https://t.me/shewitashifonee" class="contact-card" target="_blank">
+                    <div class="contact-icon">✈️</div>
+                    <div class="contact-info">
+                        <h3>Telegram</h3>
+                        <p>@shewitashifonee</p>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/share/18v8zkzgUY/" class="contact-card" target="_blank">
+                    <div class="contact-icon">👥</div>
+                    <div class="contact-info">
+                        <h3>Facebook</h3>
+                        <p>Shewita Shifone</p>
+                    </div>
+                </a>
+                <a href="https://maps.app.goo.gl/MHJ4DCe7R1EXv1rYA" class="contact-card" target="_blank">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-info">
+                        <h3>Address</h3>
+                        <p>Merkato Addisu Military Tera ቁ:F1-029C ወይም በ0911602340 ደዉሉ</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="comment-form">
+                <h3>Leave a Review</h3>
+                <div class="rating-stars">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+                <textarea id="commentText" placeholder="Write your review..."></textarea>
+                <button onclick="postComment()">Submit Review</button>
+            </div>
+            <div class="comments-list" id="commentsList"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
