@@ -1,27 +1,37 @@
 // Gallery Configuration
 const galleryImages = [
     { 
-        url: "images/IMG_20240209_183944_080.jpg", 
+        url: "https://idkyeast.github.io/IMG_20250116_120040_902.jpg", 
         alt: "Yellow Ethiopian Traditional Chiffon Dress" 
     },
     { 
-        url: "images/Lem_chiffon.jpeg", 
+        url: "https://idkyeast.github.io/IMG_20250116_120040_902.jpg", 
         alt: "Orange Ethiopian Traditional Chiffon Dress" 
     },
-    // Add your remaining images here...
-    
-    // Temporary placeholders (remove when adding your images)
-    { 
-        url: "https://source.unsplash.com/random/800x1200/?dress,african", 
-        alt: "Placeholder 1" 
+       { 
+        url: "https://idkyeast.github.io/IMG_20240214_114307_491.jpg", 
+        alt: "Yellow Ethiopian Traditional Chiffon Dress" 
     },
     { 
-        url: "https://source.unsplash.com/random/800x1200/?habesha,clothing", 
-        alt: "Placeholder 2" 
-    }
+        url: "https://idkyeast.github.io/IMG_20250129_210834_844.jpg", 
+        alt: "Orange Ethiopian Traditional Chiffon Dress" 
+    },
+       { 
+        url: "https://idkyeast.github.io/Lem%20chiffon%20__%20%E1%88%88%E1%88%9D%20%E1%88%BD%E1%8D%8E%E1%8A%95%20Adres;-22,%E1%88%98%E1%88%AD%E1%8A%AB%E1%89%B6,%E1%89%A6%E1%88%8C%20phone;-0955455017_0994414419%20Nb;-%E1%8B%8D%E1%8C%AD%20%E1%88%80%E1%8C%88%E1%88%AD%20%E1%8A%93%20%E1%8A%AD%E1%8D%8D%E1%88%8D%E1%88%80%E1%8C%88%E1%88%AD%20%E1%88%8B%E1%88%89%20%E1%8B%B0%E1%8A%95%E1%89%A0%E1%8A%9E%E1%89%BD%20%E1%8A%A5%E1%8A%95%E1%88%8D%E1%8A%AB%E1%88%88%E1%8A%95!!!.jpeg", 
+        alt: "Yellow Ethiopian Traditional Chiffon Dress" 
+    },
+    { 
+        url: "https://idkyeast.github.io/IMG_20240209_183944_080.jpg", 
+        alt: "Orange Ethiopian Traditional Chiffon Dress" 
+    },
+   
+    
+   
+    { 
+
 ];
 
-// Gallery Functions
+
 function createGalleryItems() {
     const galleryContainer = document.getElementById('galleryContainer');
     galleryContainer.innerHTML = '';
@@ -45,7 +55,7 @@ function adjustSpeed(multiplier) {
     gallery.style.animationDuration = `${20 / multiplier}s`;
 }
 
-// Navbar Toggle
+
 const toggleBtn = document.getElementById('toggleBtn');
 const navLinks = document.querySelector('.nav-links');
 
@@ -64,7 +74,7 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Review System
+
 let currentRating = 0;
 
 document.querySelectorAll('.star').forEach(star => {
@@ -149,7 +159,7 @@ function resetStars() {
     });
 }
 
-// Initialize
+
 document.addEventListener('DOMContentLoaded', () => {
     createGalleryItems();
     loadComments();
