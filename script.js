@@ -1,7 +1,7 @@
-// Gallery Configuration
+
 const galleryImages = [
     { 
-        url: "https://idkyeast.github.io/IMG_20250116_120040_902.jpg", 
+        url: "https://th.bing.com/th/id/OIP.JQ4TeiKbYroZ-JfG8FESqwHaLG?rs=1&pid=ImgDetMain", 
         alt: "Yellow Ethiopian Traditional Chiffon Dress" 
     },
     { 
@@ -26,7 +26,6 @@ const galleryImages = [
     },
    
     
-   
     { 
 
 ];
